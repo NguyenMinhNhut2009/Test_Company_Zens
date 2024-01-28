@@ -2,9 +2,13 @@ import 'dart:async';
 
 import 'package:untitled/model/drink_model.dart';
 import 'package:untitled/model/option_model.dart';
+import 'package:untitled/repository/drink_respository.dart';
+import 'package:untitled/repository/option_respository.dart';
+import 'package:untitled/repository/size_respository.dart';
+import 'package:untitled/repository/topping_respository.dart';
 import 'package:untitled/screens/cart/controller/cart_controller.dart';
 
-class CartControllerIml extends CartController {
+class CartControllerImpl extends CartController {
   int total = 1;
   int price = 0;
   int priceSize = 0;
@@ -22,13 +26,13 @@ class CartControllerIml extends CartController {
   List<DrinkModel> listDrink = DrinkRepository().listDrink;
 
   @override
-  List<OptionModel> listSize = OptionRepository().listSize;
+  List<OptionModel> listSize = SizeRepository().listSize;
 
   @override
   List<OptionModel> listOption = OptionRepository().listOption;
 
   @override
-  List<OptionModel> listTopping = OptionRepository().listTopping;
+  List<OptionModel> listTopping = ToppingRepository().listTopping;
   int? initialSelectedIndex;
   @override
   DrinkModel? dataCart;

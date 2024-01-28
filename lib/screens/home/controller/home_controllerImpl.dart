@@ -3,9 +3,10 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:untitled/model/drink_model.dart';
 import 'package:untitled/model/home_data_model.dart';
+import 'package:untitled/repository/drink_respository.dart';
 import 'package:untitled/screens/home/controller/home_controller.dart';
 
-class HomeControllerIml extends HomeController {
+class HomeControllerImpl extends HomeController {
   int count = 0;
 
   @override

@@ -4,7 +4,7 @@ import 'package:untitled/common/app_text.dart';
 import 'package:untitled/help/helper.dart';
 import 'package:untitled/screens/cart/cart_screen.dart';
 import 'package:untitled/screens/home/controller/home_controller.dart';
-import 'package:untitled/screens/home/controller/home_controllerIml.dart';
+import 'package:untitled/screens/home/controller/home_controllerImpl.dart';
 
 import '../../model/home_data_model.dart';
 
@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
   late final HomeController homeController;
   @override
   void initState() {
-    homeController = HomeControllerIml();
+    homeController = HomeControllerImpl();
     homeController.initData();
     super.initState();
   }
@@ -41,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(children: [
         Container(
           height: 320,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               gradient: LinearGradient(colors: [
             Colors.white,
             Color(0xffffe6d4),
@@ -50,8 +50,8 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                padding: EdgeInsets.fromLTRB(8, 0, 0, 0),
-                child: Column(
+                padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
+                child: const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -116,6 +116,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     fontWeight: FontWeight.w400,
                     height: 0,
                   ),
+                ),
+                SizedBox(
+                  width: 10,
                 ),
                 StreamBuilder(
                     stream: saveStream,

@@ -1,16 +1,23 @@
-# untitled
+# Overview
 
-A new Flutter project.
+This project use stream for state management.
 
-## Getting Started
+## Project structure
 
-This project is a starting point for a Flutter application.
+- common: common widgets use everywhere in project
+- help: utils functions
+- model: data class
+- repository: api call handler
+- screens: UI components
+  - controller: state managements
 
-A few resources to get you started if this is your first Flutter project:
+## Data flow
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- UI -> controller -> repository
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Demo
+
+https://drive.google.com/file/d/1zY-NWfHiJhIoBouJA5ATR2ZFyeox9_QH/view?usp=drive_link
+<img src="https://drive.google.com/file/d/1TpHG2wPyHayFkRL2yhLqiiRK1h1OgjdM/view" height="700" />
+
+<img src="https://drive.google.com/file/d/19aGbSqlMrwWVHERWvTIRi7MQMPcZOJ23/view" height="700" />
