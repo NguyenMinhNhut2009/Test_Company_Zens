@@ -16,7 +16,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  // String dropdownValue = items.first;
   List<int> listData = [];
 
   late final HomeController homeController;
@@ -66,7 +65,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                 fontSize: 44,
                                 fontFamily: 'Poppins',
                                 fontWeight: FontWeight.w500,
-                                // height: 0.03,
                               ),
                             ),
                             TextSpan(
@@ -76,8 +74,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                 fontSize: 65,
                                 fontFamily: 'Righteous',
                                 fontWeight: FontWeight.w400,
-                                // height: 0.02,
-                                // letterSpacing: 6.80,
                               ),
                             ),
                           ],
@@ -252,7 +248,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     decoration: BoxDecoration(
                         color: backgroundColor,
                         borderRadius: BorderRadius.circular(20),
-                        // border: Border.all(width: 1, color: Colors.red),
                         boxShadow: [
                           BoxShadow(
                               color: Color(0xffD3D1D8).withOpacity(0.25),
@@ -270,7 +265,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               borderRadius: BorderRadius.circular(20),
                               child: Image.asset(
                                 '${data.listNewData[index].img}',
-                                // height: 200,
                               ),
                             ),
                             Container(

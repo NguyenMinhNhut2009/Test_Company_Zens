@@ -26,6 +26,3 @@ abstract class CartController {
   // void updatePrice();
   void onPressAddTotal();
 }
-
- //public để cho lớp nào cần dùng thì dùng
- // không _ là private chỉ để cho lớp đó dùng mà thôi.

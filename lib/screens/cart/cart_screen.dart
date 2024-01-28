@@ -563,24 +563,12 @@ class _CartScreenState extends State<CartScreen> {
                       Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(16),
-                          // boxShadow: [
-                          //   BoxShadow(
-                          //       blurRadius: 3,
-                          //       spreadRadius: 1,
-                          //       offset: Offset(1, 3),
-                          //       color: primaryGreyColor
-                          //           .withOpacity(focusNode.hasFocus ? 0.2 : 0))
-                          // ],
                         ),
                         child: TextField(
-                          // autofocus: false,
-                          // focusNode: focusNode,
-
                           controller: noteVC,
                           cursorColor: Colors.black,
                           cursorWidth: 1,
                           keyboardType: TextInputType.text,
-                          // obscureText: true,
                           maxLines: 8,
                           maxLength: 4000,
                           style: const TextStyle(
@@ -601,7 +589,6 @@ class _CartScreenState extends State<CartScreen> {
                                     BorderRadius.all(Radius.circular(5))),
                             hintStyle:
                                 TextStyle(fontSize: 14, color: textColor),
-                            //labelText: placeholder,
                             hintText: note,
                             counterText: '',
                           ),

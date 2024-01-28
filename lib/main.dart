@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/screens/cart/cart_screen.dart';
 import 'package:untitled/screens/home/home_screen.dart';
 
 void main() {
@@ -8,8 +7,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

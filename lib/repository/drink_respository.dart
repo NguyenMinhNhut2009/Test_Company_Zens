@@ -44,6 +44,5 @@ class DrinkRepository {
         favorite: 1200,
         rating: 4.9,
         save: false),
-    // Add more DrinkModel items as needed
   ];
 }

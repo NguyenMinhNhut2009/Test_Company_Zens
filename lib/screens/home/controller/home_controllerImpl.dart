@@ -59,12 +59,10 @@ class HomeControllerImpl extends HomeController {
       _saveStreamController
           .add(HomeDataModel(sort: vaule, listNewData: listDrink));
     } else if (vaule == SortItem.cheap) {
-      // dropdownValue = vaule;
       listDrink.sort((a, b) => a.salePrice!.compareTo(b.salePrice!));
       _saveStreamController
           .add(HomeDataModel(sort: vaule, listNewData: listDrink));
     } else if (vaule == SortItem.popular) {
-      // dropdownValue = vaule;
       listDrink.sort((a, b) => b.favorite!.compareTo(a.favorite!));
       _saveStreamController
           .add(HomeDataModel(sort: vaule, listNewData: listDrink));
