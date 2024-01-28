@@ -18,6 +18,3 @@ This project use stream for state management.
 # Demo
 
 https://drive.google.com/file/d/1zY-NWfHiJhIoBouJA5ATR2ZFyeox9_QH/view?usp=drive_link
-<img src="https://drive.google.com/file/d/1TpHG2wPyHayFkRL2yhLqiiRK1h1OgjdM/view?usp=drive_link" height="700" />
-
-<img src="https://drive.google.com/file/d/19aGbSqlMrwWVHERWvTIRi7MQMPcZOJ23/view?usp=drive_link" height="700" />
